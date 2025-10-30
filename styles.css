@@ -370,9 +370,13 @@ h4, h5 {
 }
 
 .icon {
-  width: 10vw;
+  width: 15vw;
   text-align: center;
 }
+ .nexo_final {
+  width: 20vw;
+ }
+      
  .rodape {
   display: flex;
   flex-direction: column;
@@ -415,4 +419,5 @@ h4, h5 {
         transform: translateX(-45px);
       }
     }
+
 
