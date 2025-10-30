@@ -1,0 +1,418 @@
+:root {
+  --fundo-principal: #0A0A0A;
+  /* Uso: fundo do site, seções principais, header e footer. */
+  --cor-principal-preciosa: #F5E68B;
+  /*Uso: títulos, ícones, bordas de botões, hover em links, detalhes.*/
+  --cor-titular: #FFF8D6;
+  --cor-textual: #C9C6B8;
+  --cor-textual-secundaria: #6E6B60;
+
+  --cor-secundaria: #2A3035;
+  /* Uso: fundo de cards, menus, bordas suaves, hover de botões secundários. */
+  --alert: #B3443B;
+  /* Uso: erros de formulário, efeitos de dano, alertas visuais. */
+  
+  
+  --gradiente-de-botao: linear-gradient(90deg, #F5E68B 0%, #D7C46F 100%);
+
+
+  --filtro-para-logo:  drop-shadow(0 0 12px #F5E68B) drop-shadow(0 0 24px #C6B64D);
+
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--orange-type-dark);
+}
+
+body {
+  background-color: var(--fundo-principal);
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  height: 25vh;
+  width: 100vw;
+
+}
+
+
+.cabecalho__navegacao {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+   align-items: center;
+   justify-content: center;
+   gap: 25px;
+    border-bottom: 2px solid var(--cor-principal-preciosa);
+}
+
+.nexo_final {
+  width: 15vw;
+  aspect-ratio: 1 / 1;
+  filter: var(--filtro-para-logo);
+ 
+}
+.botao {
+  background-color: transparent;
+  border: none;
+}
+
+.hamburguer {
+  display: none;
+}
+
+#menu-check {
+  display: none;
+}
+
+.navegacao {
+  display: flex;
+  gap: 25px;
+}
+
+.alternativo {
+  display: none;
+}
+
+.icon {
+  width: 7vw;
+  aspect-ratio: 1 / 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-textual);
+}
+
+.cabecalho__navegacao__busca {
+  width: 30%;
+  border: 2px solid var(--cor-principal-preciosa);
+  border-radius: 10px;
+  height: 25px;
+ color: var(--cor-textual-secundaria);
+}
+
+
+.principal {
+  width: 100vw;
+}
+
+
+.principal__anuncio {
+  margin-top: 2px;
+  width: 100%;
+  height: 60vh;
+  background-image: url(./assets/Banner.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--cor-principal-preciosa);
+}
+
+h1 {
+  width: 300px;
+  color: var(--cor-titular);
+  font-size: 50px;
+  position: relative;
+  right: 150px;
+}
+
+.principal__destaque {
+  display: flex;
+  flex-direction: column;
+}
+.principal__destaque__paragrafo {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--cor-textual);
+}
+.principal__destaque__busca {
+  width: 40vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+ color: var(--cor-textual-secundaria); 
+}
+
+.destaque__artigos {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.artigo {
+  display: flex;
+  align-items: center;
+  height: 27.5vh;
+  text-align: center;
+  color: var(--cor-textual);
+  border: 2px solid var(--cor-principal-preciosa);
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: var(--cor-titular);
+  margin-left: 150px;
+}
+
+.principal__plus {
+  border-top: 2px solid var(--cor-principal-preciosa);
+  border-bottom: 2px solid var(--cor-principal-preciosa);
+  background-image: url(./assets/DESPERTE\ O\ PODER\ DO\ NEXO.jpg);
+  width: 100vw;
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+ h3 {
+  margin-left: 100px;
+  color: var(--cor-titular);
+  font-size: 40px;
+  width: 320px;
+ }
+
+
+h4, h5 {
+  text-align: center;
+  color: var(--cor-titular);
+}
+
+ .principal__compra {
+  display: flex;
+  justify-content: center;
+ }
+
+  
+
+  ul {
+    top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+    li {
+      color: var(--cor-textual-secundaria);
+    }
+
+    .rodape {
+      margin-top: 50px;
+      border-top: 2px solid var(--cor-principal-preciosa);
+      background-color: var(--cor-secundaria);
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .rodape__funcionamento, .rodape__institucional {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+   
+.rodape__logo {
+  grid-area: logo;
+}
+
+    .rodape__funcionamento {
+      grid-area: funcionamento;
+    }
+    .rodape__institucional {
+      grid-area: institucional;
+    }
+     
+    address {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    figcaption {
+      color: var(--cor-textual);
+    }
+
+    .paragrafos__rodape {
+      color: var(--cor-textual);
+    }
+
+
+
+    @media (max-width: 918px) {
+
+   .cabecalho__navegacao {
+    flex-wrap: wrap;
+   }
+
+
+
+
+  .cabecalho__navegacao__busca {
+  width: 80%;
+  order: 9;
+  position: relative;
+  bottom: 45px;
+}
+
+ .destaque__artigos {
+
+  grid-template-columns: repeat(2, 200px);
+  justify-content: space-evenly;
+  gap: 30px;
+
+ }
+
+ .principal__plus {
+  background-image: url(./assets/Nexos\ armor.jpg);
+  background-position: center;
+ }
+
+ h1 {
+  position: static;
+ }
+
+
+
+ .rodape {
+  height: auto;
+  display: grid;
+  grid-template-areas: 
+  "logo                   logo"
+  "funcionamento institucional";
+  justify-content: center;
+  align-items: center;
+  height: 53vh;
+  gap: 50px;
+ }
+ .rodape__funcionamento, .rodape__logo, .rodape__institucional {
+  height: auto;
+  position: relative;
+  bottom: 20px;
+ }
+ .rodape__logo {
+  text-align: center;
+ }
+  
+
+    }
+
+    @media (max-width: 420px) {
+
+
+
+  .destaque__artigos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .artigo {
+  width: 50%;
+  height: 250px;
+  font-size: large;
+ }
+
+ h3 {
+  width: 100%;
+  margin: 0;
+  font-size: 32px;
+ }
+  
+ .principal__plus {
+  background-image: url(./assets/Nexos\ armor.jpg);
+  background-position: center;
+ }
+
+ .navegacao {
+  display: none;
+ }
+
+ .cabecalho__navegacao {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ }
+
+.hamburguer {
+  display: block;
+  order: 1;
+}
+
+.nexo_final {
+  order: 2;
+}
+.engrenagem {
+  order: 3;
+  margin-right: 50px;
+}
+
+
+
+
+.cabecalho__navegacao__busca {
+  order: 4;
+}
+
+.icon {
+  width: 10vw;
+  text-align: center;
+}
+ .rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+ }
+
+ input {
+  width: 95%;
+ }
+
+ #menu-check:checked ~ .navegacao {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 0;
+  height: auto;
+  top: 27.6px;
+  transform: translateX(-37px);
+  z-index: 999;
+
+ }
+
+ .cabecalho__navegacao__link {
+  padding: 25px;
+  z-index: 2;
+  background-color: var(--cor-secundaria);
+  position: static;
+ }
+
+ h2 {
+  text-align: center;
+  margin: 0;
+ }
+
+    }
+
+    @media (max-width: 420px) and (min-width: 340px) {
+      #menu-check:checked ~ .navegacao {
+        transform: translateX(-45px);
+      }
+    }
+
